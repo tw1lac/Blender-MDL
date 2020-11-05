@@ -1,5 +1,4 @@
-from .BaseHandler import BaseHandler
-from .__init__ import dbg
+from .BaseHandler import BaseHandler, dbg
 
 
 # This handler imports the faces inside a Geoset block.

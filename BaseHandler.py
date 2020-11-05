@@ -2,6 +2,9 @@
 # They all have to override the .run() function
 # They should always call newState, cargo = BaseHandler.run(cargo)
 # before doing anything else.
+dbg = False
+
+
 class BaseHandler:
 	def __init__(self, parent):
 		self.parent = parent

@@ -1,7 +1,6 @@
 import pdb
 
-from .BaseHandler import BaseHandler
-from .__init__ import dbg
+from .BaseHandler import BaseHandler, dbg
 
 
 # This handler deals with the content inside a Geoset block.

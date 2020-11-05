@@ -19,7 +19,7 @@ from .TVERTICES import TVERTICES
 from .VERSION import VERSION
 from .VERTEXGROUP import VERTEXGROUP
 from .VERTICES import VERTICES
-from .__init__ import dbg
+from .BaseHandler import dbg
 
 
 # This class initiates and starts the state machine and uses the gathered data
@@ -40,9 +40,9 @@ class DataImporter:
 
 		# Purge the geoset manager so we don't retain any contents from previous imports this session.
 		mgr = GeosetManager()
-		skel_info = []
-		model_info = {}
-		camera_info = {}
+		self.skel_info = []
+		self.model_info = {}
+		self.camera_info = {}
 
 		m = StateMachine(parent=self)
 		m.add('SEARCH', SEARCH, startState=True)
@@ -131,7 +131,7 @@ class DataImporter:
 		#Create our bones
 		for d in self.skel_info:
 			bone = armat.edit_bones.new(d['bone_name'])
-			bone.head = (d['pivot_point'][0],d['pivot_point'][1],d['pivot_point'][2])
+			bone.head = (d['pivot_point'][0], d['pivot_point'][1], d['pivot_point'][2])
 			#if 'parent' in d:
 				#bone.tail = (d['pivot_point'][0],d['pivot_point'][1],d['pivot_point'][2])
 				#bone.use_connect = True;
@@ -152,7 +152,7 @@ class DataImporter:
 
 		# Create hook modifiers to link armature posing to the mesh/vertex groups.
 		for o in bpy.data.objects:
-			if o.type == 'MESH':
+			if o.type == 'MESH' and o.name.startswith(self.model_info['name']):
 				geo_index = int(o.name[len(self.model_info['name']):])
 				for vg in o.vertex_groups:
 					for g in self.mgr.groups[geo_index][vg.index]:
