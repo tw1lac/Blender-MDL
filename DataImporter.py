@@ -145,6 +145,7 @@ class DataImporter:
 				if 'parent' in self.skel_info[i]:
 					if self.skel_info[j]['id'] == self.skel_info[i]['parent']:
 							armat.edit_bones[i].parent = armat.edit_bones[j]
+							armat.edit_bones[i].use_connect = True
 
 
 		bpy.ops.object.mode_set(mode='OBJECT')
