@@ -1,4 +1,4 @@
-from BaseHandler import BaseHandler
+from .BaseHandler import BaseHandler
 
 
 # This handler imports the vertices inside a Geoset block.

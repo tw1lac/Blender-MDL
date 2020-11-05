@@ -1,4 +1,4 @@
-from BaseHandler import BaseHandler
+from .BaseHandler import BaseHandler
 
 
 # This handles any Camera block (assume one max for now but this should change)

@@ -3,23 +3,23 @@ import time
 
 import bpy
 
-from BONE import BONE
-from CAMERA import CAMERA
-from FACES import FACES
-from GEOSET import GEOSET
-from GROUPS import GROUPS
-from GeosetManager import GeosetManager
-from HELPER import HELPER
-from MODEL import MODEL
-from NORMALS import NORMALS
-from PIVOTPOINTS import PIVOTPOINTS
-from SEARCH import SEARCH
-from StateMachine import StateMachine
-from TVERTICES import TVERTICES
-from VERSION import VERSION
-from VERTEXGROUP import VERTEXGROUP
-from VERTICES import VERTICES
-from WarMDLImport import dbg
+from .BONE import BONE
+from .CAMERA import CAMERA
+from .FACES import FACES
+from .GEOSET import GEOSET
+from .GROUPS import GROUPS
+from .GeosetManager import GeosetManager
+from .HELPER import HELPER
+from .MODEL import MODEL
+from .NORMALS import NORMALS
+from .PIVOTPOINTS import PIVOTPOINTS
+from .SEARCH import SEARCH
+from .StateMachine import StateMachine
+from .TVERTICES import TVERTICES
+from .VERSION import VERSION
+from .VERTEXGROUP import VERTEXGROUP
+from .VERTICES import VERTICES
+from .__init__ import dbg
 
 
 # This class initiates and starts the state machine and uses the gathered data

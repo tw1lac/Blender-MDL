@@ -1,4 +1,4 @@
-from BaseHandler import BaseHandler
+from .BaseHandler import BaseHandler
 
 
 # This is the handler for importing groups matrix data for armature rigging

@@ -11,14 +11,14 @@
 
 import bpy
 
-from ImportWarMDL import ImportWarMDL
+from .ImportWarMDL import ImportWarMDL
 
 dbg = False
 
 bl_info = {
 	"name": "Import WarCraft MDL (.mdl)",
 	"description": "This addon allows you to import WarCraft MDL model files (.mdl).",
-	"author": "Thomas 'CruzR' Glamsch, Mark Newbery",
+	"author": "Thomas 'CruzR' Glamsch, Mark Newbery, twilac",
 	"version": (0, 2, 2),
 	"blender": (2, 5, 7),
 	#"api": ???,

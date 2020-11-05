@@ -1,5 +1,5 @@
-from BaseHandler import BaseHandler
-from WarMDLImport import dbg
+from .BaseHandler import BaseHandler
+from .__init__ import dbg
 
 
 # This handler imports the faces inside a Geoset block.

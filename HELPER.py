@@ -1,4 +1,4 @@
-from BaseHandler import BaseHandler
+from .BaseHandler import BaseHandler
 
 
 #This handles helpers which seem to be used as dummy/parent bones

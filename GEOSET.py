@@ -1,7 +1,7 @@
 import pdb
 
-from BaseHandler import BaseHandler
-from WarMDLImport import dbg
+from .BaseHandler import BaseHandler
+from .__init__ import dbg
 
 
 # This handler deals with the content inside a Geoset block.

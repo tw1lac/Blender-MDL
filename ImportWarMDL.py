@@ -2,7 +2,7 @@ import bpy
 from bpy.props import StringProperty
 from bpy_extras.io_utils import ImportHelper
 
-from DataImporter import DataImporter
+from .DataImporter import DataImporter
 
 
 # This is the import operator.

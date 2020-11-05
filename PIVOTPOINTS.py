@@ -1,4 +1,4 @@
-from BaseHandler import BaseHandler
+from .BaseHandler import BaseHandler
 
 
 # Pivot point handler, which 'might' be the bone positions/origins?
